@@ -86,7 +86,7 @@ if (NOT SKIP_MPI)
     message (STATUS "MPI enabled")
   else ()
     message (STATUS "MPI not found; building without MPI")
-  endif()    
+  endif()
 endif()
 
 
@@ -211,5 +211,5 @@ if (NOT MAIN_PROJECT)
     endif()
   endif()
 
-  include(add_pfunit_test)
+  include(add_pfunit_ctest)
 endif()
